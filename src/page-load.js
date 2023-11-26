@@ -16,7 +16,6 @@
 // Target Footer DIV
 //  - Add attribution for images
 
-// import siteLogo from './images/logo.png';
 
 function onPageLoad() {
     const pageContent = document.querySelector('#content');
@@ -48,7 +47,6 @@ function onPageLoad() {
 
     selectHeader.appendChild(logo);
     logo.setAttribute("class", "logo");
-    // logo.setAttribute("src", siteLogo);
 
     selectHeader.appendChild(nav);
     nav.setAttribute("class", "nav");

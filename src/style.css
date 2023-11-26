@@ -23,14 +23,39 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* --- Header Area --- */
+
 .header {
-    border: 1px solid var(--red);
-    padding: 25px;
+    display: grid;
+    justify-content: center;
 }
 
 .logo {
     content:url("./images/logo.png");
 }
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+ul button {
+    padding: 10px;
+    font-family: "Potta One", sans-serif;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+
+ul button:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+/* --- Main Area --- */
 
 .main {
     border: 1px solid blue;
