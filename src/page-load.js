@@ -20,9 +20,9 @@
 function onPageLoad() {
     const pageContent = document.querySelector('#content');
 
-    const header = document.createElement('DIV');
-    const main = document.createElement('DIV');
-    const footer = document.createElement('DIV');
+    const header = document.createElement('div');
+    const main = document.createElement('div');
+    const footer = document.createElement('div');
 
     // create header
     pageContent.appendChild(header);
@@ -61,6 +61,22 @@ function onPageLoad() {
 
     selectNav.appendChild(navContact);
     navContact.textContent = "Contact";
+
+    // target main div
+    const selectMain = document.querySelector('.main');
+
+    const innerContent = document.createElement('div');
+
+    selectMain.appendChild(innerContent);
+    innerContent.setAttribute("class", "inner");
+
+    // target footer div
+    const selectFooter = document.querySelector('.footer');
+    
+    const copyRight = document.createElement('p');
+
+    selectFooter.appendChild(copyRight);
+    copyRight.textContent = "©2023 This Company Doesn't Exist";
 
 };
 

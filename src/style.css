@@ -62,7 +62,11 @@ ul button:hover {
     padding: 500px;
 }
 
+.inner {
+    border: 1px solid blue;
+}
+
 .footer {
-    border: 1px solid green;
-    padding: 25px;
+    font-size: 16px;
+    text-align: center;
 }
