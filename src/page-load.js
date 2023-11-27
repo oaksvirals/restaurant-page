@@ -57,7 +57,7 @@ function onPageLoad() {
     const copyRight = document.createElement('p');
 
     selectFooter.appendChild(copyRight);
-    copyRight.textContent = "©2023 This Company Doesn't Exist";
+    copyRight.textContent = "©2023 This Business Doesn't Exist";
 
 };
 

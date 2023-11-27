@@ -2,7 +2,7 @@
 
 :root {
     --red: #9D1107;
-    --red-opac: rgb(156, 17, 7, 0.3);
+    --redOpac: rgb(156, 17, 7, 0.66);
     --orange: #DF572A;
     --white: #ffffff;
     --black: #000000;
@@ -14,14 +14,22 @@
     margin: 0;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
+html {
+    /* height: 100%; */
+    /* border: 1px solid teal; */
+    /* min-height: 100vh; */
+    /* min-height: 10000px; */
+}
 
+body {
+    border: 1px solid blue;
     font-family: "Potta One", sans-serif;
 
     display: grid;
     grid-template-rows: auto 1fr auto;
+
+    /* height: 100%; */
+    /* min-height: 1000px; */
 }
 
 /* --- Header Area --- */
@@ -59,30 +67,54 @@ ul button:hover {
 /* --- Main Area --- */
 
 .main {
-    border: 1px solid blue;
-    padding: 500px;
+    border-top: 5px solid var(--red);
+    border-bottom: 5px solid var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    background-image:url(./images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    min-height: 1100px;
 }
 
 .inner {
-    /* border: 1px solid blue; */
+    max-width: 720px;
+    border-radius: 8px;
+    /* padding: 25px; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .welcome {
-    border-bottom: 2px solid var(--red);
+    border: 5px solid var(--red);
+    background-color: var(--white);
+    border-radius: 8px;
+
     padding: 10px;
 }
 
 .welcome h2 {
     text-align: center;
+    color: var(--red);
 }
 
 .welcome p {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
 }
 
 .hours {
-    border-bottom: 2px solid var(--red);
+    border: 5px solid var(--red);
+    background-color: var(--white);
+    border-radius: 8px;
+
     padding: 10px;
 }
 
@@ -91,12 +123,19 @@ ul button:hover {
     padding: 10px;
 }
 
+.hours h2 {
+    color: var(--red);
+}
+
 .hours p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .location {
-    /* border-bottom: 2px solid var(--red); */
+    border: 5px solid var(--red);
+    background-color: var(--white);
+    border-radius: 8px;
+
     padding: 10px;
 }
 
@@ -105,13 +144,19 @@ ul button:hover {
     padding: 10px;
 }
 
+.location h2 {
+    color: var(--red);
+}
+
 .location p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Footer Area */
 
 .footer {
+    border: 1px solid pink;
     font-size: 16px;
     text-align: center;
+    padding: 15px;
 }
