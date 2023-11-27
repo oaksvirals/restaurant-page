@@ -2,6 +2,7 @@
 
 :root {
     --red: #9D1107;
+    --red-opac: rgb(156, 17, 7, 0.3);
     --orange: #DF572A;
     --white: #ffffff;
     --black: #000000;
@@ -63,8 +64,52 @@ ul button:hover {
 }
 
 .inner {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
+
+.welcome {
+    border-bottom: 2px solid var(--red);
+    padding: 10px;
+}
+
+.welcome h2 {
+    text-align: center;
+}
+
+.welcome p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.hours {
+    border-bottom: 2px solid var(--red);
+    padding: 10px;
+}
+
+.hours h2, .hours p {
+    text-align: center;
+    padding: 10px;
+}
+
+.hours p {
+    font-size: 18px;
+}
+
+.location {
+    /* border-bottom: 2px solid var(--red); */
+    padding: 10px;
+}
+
+.location h2, .location p {
+    text-align: center;
+    padding: 10px;
+}
+
+.location p {
+    font-size: 18px;
+}
+
+/* Footer Area */
 
 .footer {
     font-size: 16px;

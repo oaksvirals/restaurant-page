@@ -1,22 +1,3 @@
-// Init Page Load for: Rice Ronin
-
-// Target our content DIV
-//  - Add header DIV
-//  - Add mainContent DIV
-//  - Add footer DIV
-
-// Target Header DIV
-// - Add Logo
-// - Add Navigation (Home, Menu, Contact)
-
-// Target Main Content DIV
-//  - Set Background
-//  - Add Inner Content DIV
-
-// Target Footer DIV
-//  - Add attribution for images
-
-
 function onPageLoad() {
     const pageContent = document.querySelector('#content');
 
@@ -36,7 +17,7 @@ function onPageLoad() {
     pageContent.appendChild(footer);
     footer.setAttribute("class", "footer");
 
-    // target header div
+    // header
     const selectHeader = document.querySelector('.header');
 
     const logo = document.createElement('img');
@@ -62,7 +43,7 @@ function onPageLoad() {
     selectNav.appendChild(navContact);
     navContact.textContent = "Contact";
 
-    // target main div
+    // main
     const selectMain = document.querySelector('.main');
 
     const innerContent = document.createElement('div');
@@ -70,7 +51,7 @@ function onPageLoad() {
     selectMain.appendChild(innerContent);
     innerContent.setAttribute("class", "inner");
 
-    // target footer div
+    // footer
     const selectFooter = document.querySelector('.footer');
     
     const copyRight = document.createElement('p');
