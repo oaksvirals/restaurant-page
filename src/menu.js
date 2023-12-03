@@ -2,7 +2,7 @@ function makeMenu() {
     const inner = document.querySelector('.inner');
 
     // set active nav
-    const contactNav = document.querySelector('.contactButton');
+    const contactNav = document.querySelector('.menuButton');
     contactNav.style.color = 'var(--red)';
 
     // categories
@@ -161,7 +161,7 @@ function makeMenu() {
         // ramune
         const ramune = document.createElement('h3');
         ramune.setAttribute('class', 'dish')
-        ramune.textContent = 'Bubble Tea';
+        ramune.textContent = 'Ramune Soft Drink';
         drinkList.appendChild(ramune);
 
         const ramuneImg = document.createElement('img');

@@ -11,6 +11,7 @@ const menu = document.querySelector('.menuButton');
 const contact = document.querySelector('.contactButton');
 
 home.addEventListener('click', displayHome);
+menu.addEventListener('click', displayMenu);
 contact.addEventListener('click', displayContact);
 
 function displayHome() {
@@ -18,10 +19,10 @@ function displayHome() {
     makeHome();
 };
 
-// function displayMenu() {
-//     clearPage();
-//     makeHome();
-// };
+function displayMenu() {
+    clearPage();
+    makeMenu();
+};
 
 function displayContact() {
     clearPage();
@@ -37,5 +38,4 @@ function clearPage() {
     contact.style.color = '';
 };
 
-// makeHome();
-makeMenu();
+makeHome();
