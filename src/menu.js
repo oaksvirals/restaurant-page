@@ -91,10 +91,90 @@ function makeMenu() {
     sidesTitle.textContent = 'Sides';
     targetSides.appendChild(sidesTitle);
 
+    const sideList = document.createElement('div');
+    sideList.setAttribute('class', 'sideList');
+    targetSides.appendChild(sideList);
+
+        // baby bok choy stir fry
+        const babyBok = document.createElement('h3');
+        babyBok.setAttribute('class', 'dish')
+        babyBok.textContent = 'Baby Bok Choy Stir Fry';
+        sideList.appendChild(babyBok);
+
+        const babyBokImg = document.createElement('img');
+        babyBokImg.setAttribute('class', 'baby-bok dishImg dish');
+        sideList.appendChild(babyBokImg);
+
+        const babyBokInfo = document.createElement('p');
+        babyBokInfo.setAttribute('class', 'food-info dish');
+        babyBokInfo.setAttribute('style', 'white-space: pre;');
+        babyBokInfo.textContent = 'Pair your rice dish with our famous,\r\n';
+        babyBokInfo.textContent += 'baby bok choy stir fry.\r\n';
+        babyBokInfo.textContent += '- $3';
+        sideList.appendChild(babyBokInfo);
+
+        // chinese coleslaw
+        const chineseSlaw = document.createElement('h3');
+        chineseSlaw.setAttribute('class', 'dish')
+        chineseSlaw.textContent = 'Chinese Coleslaw';
+        sideList.appendChild(chineseSlaw);
+
+        const chineseSlawImg = document.createElement('img');
+        chineseSlawImg.setAttribute('class', 'chinese-slaw dishImg dish');
+        sideList.appendChild(chineseSlawImg);
+
+        const chineseSlawInfo = document.createElement('p');
+        chineseSlawInfo.setAttribute('class', 'food-info dish');
+        chineseSlawInfo.setAttribute('style', 'white-space: pre;');
+        chineseSlawInfo.textContent = 'Zesty veggi chinese coleslaw,\r\n';
+        chineseSlawInfo.textContent += 'a great way to get more vegetables in.\r\n';
+        chineseSlawInfo.textContent += '- $3';
+        sideList.appendChild(chineseSlawInfo);
+
     // drinks
     const drinksTitle = document.createElement('h2');
     drinksTitle.textContent = 'Drinks';
     targetDrinks.appendChild(drinksTitle);
+
+    const drinkList = document.createElement('div');
+    drinkList.setAttribute('class', 'drinkList');
+    targetDrinks.appendChild(drinkList);
+
+        // bubble tea
+        const bubbleTea = document.createElement('h3');
+        bubbleTea.setAttribute('class', 'dish')
+        bubbleTea.textContent = 'Bubble Tea';
+        drinkList.appendChild(bubbleTea);
+
+        const bubbleTeaImg = document.createElement('img');
+        bubbleTeaImg.setAttribute('class', 'bubble-tea dishImg dish');
+        drinkList.appendChild(bubbleTeaImg);
+
+        const bubbleTeaInfo = document.createElement('p');
+        bubbleTeaInfo.setAttribute('class', 'food-info dish');
+        bubbleTeaInfo.setAttribute('style', 'white-space: pre;');
+        bubbleTeaInfo.textContent = 'Tea and milk base with\r\n';
+        bubbleTeaInfo.textContent += 'tapioca pearls.\r\n';
+        bubbleTeaInfo.textContent += '- $3';
+        drinkList.appendChild(bubbleTeaInfo);
+
+        // ramune
+        const ramune = document.createElement('h3');
+        ramune.setAttribute('class', 'dish')
+        ramune.textContent = 'Bubble Tea';
+        drinkList.appendChild(ramune);
+
+        const ramuneImg = document.createElement('img');
+        ramuneImg.setAttribute('class', 'ramune dishImg dish');
+        drinkList.appendChild(ramuneImg);
+
+        const ramuneInfo = document.createElement('p');
+        ramuneInfo.setAttribute('class', 'food-info dish');
+        ramuneInfo.setAttribute('style', 'white-space: pre;');
+        ramuneInfo.textContent = 'Japanese soft drink.\r\n';
+        ramuneInfo.textContent += 'Original or Strawberry\r\n';
+        ramuneInfo.textContent += '- $3';
+        drinkList.appendChild(ramuneInfo);
 
 };
 

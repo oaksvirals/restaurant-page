@@ -197,7 +197,9 @@ p {
 
 /* Menu */
 
-.dishList {
+.dishList,
+.sideList,
+.drinkList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,6 +235,22 @@ p {
 
 .sticky-rice {
     background-image: url(./images/sticky-rice.jpg);
+}
+
+.baby-bok {
+    background-image: url(./images/baby-bok.jpg);
+}
+
+.chinese-slaw {
+    background-image: url(./images/chinese-coleslaw.jpg);
+}
+
+.bubble-tea {
+    background-image: url(./images/bubble-tea.jpg);
+}
+
+.ramune {
+    background-image: url(./images/ramune.jpg);
 }
 
 /* Footer Area */
