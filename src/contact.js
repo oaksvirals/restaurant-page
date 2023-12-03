@@ -91,6 +91,10 @@ function makeContact() {
     adminThreeDetails.textContent += "Phone: (555)555-5555";
     adminThreeInfo.appendChild(adminThreeDetails);
 
+    // set active nav
+    const contactNav = document.querySelector('.contactButton');
+    contactNav.setAttribute('class', 'activeMenu');
+
 };
 
 export {

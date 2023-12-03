@@ -36,13 +36,15 @@ function onPageLoad() {
     
     selectNav.appendChild(navHome);
     navHome.textContent = "Home";
-    navHome.style.color = "var(--red)";
+    navHome.setAttribute('class', 'homeButton');
 
     selectNav.appendChild(navMenu);
     navMenu.textContent = "Menu";
+    navMenu.setAttribute('class', 'menuButton');
 
     selectNav.appendChild(navContact);
     navContact.textContent = "Contact";
+    navContact.setAttribute('class', 'contactButton');
 
     // main
     const selectMain = document.querySelector('.main');

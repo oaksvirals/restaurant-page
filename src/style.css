@@ -64,6 +64,10 @@ ul button:hover {
     cursor: pointer;
 }
 
+.activeMenu {
+    color: var(--red)
+}
+
 /* --- Main Area --- */
 
 .main {
