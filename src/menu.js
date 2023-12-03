@@ -49,6 +49,42 @@ function makeMenu() {
         kimchiRiceInfo.textContent += '- $8';
         dishList.appendChild(kimchiRiceInfo);
 
+        // lao crispy rice salad
+        const laoRice = document.createElement('h3');
+        laoRice.setAttribute('class', 'dish')
+        laoRice.textContent = 'Lao Crispy Rice Salad';
+        dishList.appendChild(laoRice);
+
+        const laoRiceImg = document.createElement('img');
+        laoRiceImg.setAttribute('class', 'lao-rice dishImg dish');
+        dishList.appendChild(laoRiceImg);
+
+        const laoRiceInfo = document.createElement('p');
+        laoRiceInfo.setAttribute('class', 'food-info dish');
+        laoRiceInfo.setAttribute('style', 'white-space: pre;');
+        laoRiceInfo.textContent = 'Deep fried crispy rice balls, broken into pieces,\r\n';
+        laoRiceInfo.textContent += 'tossed with herbs and sweet and sour dressing.\r\n';
+        laoRiceInfo.textContent += '- $7';
+        dishList.appendChild(laoRiceInfo);
+
+        // chinese sticky rice
+        const stickyRice = document.createElement('h3');
+        stickyRice.setAttribute('class', 'dish')
+        stickyRice.textContent = 'Chinese Sticky Rice';
+        dishList.appendChild(stickyRice);
+
+        const stickyRiceImg = document.createElement('img');
+        stickyRiceImg.setAttribute('class', 'sticky-rice dishImg dish');
+        dishList.appendChild(stickyRiceImg);
+
+        const stickyRiceInfo = document.createElement('p');
+        stickyRiceInfo.setAttribute('class', 'food-info dish');
+        stickyRiceInfo.setAttribute('style', 'white-space: pre;');
+        stickyRiceInfo.textContent = 'Chewy sticky rice, toasted peanuts, and\r\n';
+        stickyRiceInfo.textContent += 'chinese sausage with sweet soy sauce.\r\n';
+        stickyRiceInfo.textContent += '- $9';
+        dishList.appendChild(stickyRiceInfo);
+
 
     // sides
     const sidesTitle = document.createElement('h2');

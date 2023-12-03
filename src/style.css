@@ -227,6 +227,14 @@ p {
     background-image: url(./images/kimchi-rice.jpg);
 }
 
+.lao-rice {
+    background-image: url(./images/lao-rice.jpg);
+}
+
+.sticky-rice {
+    background-image: url(./images/sticky-rice.jpg);
+}
+
 /* Footer Area */
 
 .footer {
