@@ -19,7 +19,7 @@ function makeHome() {
     const welcomeText = document.createElement('p');
 
     welcomeTitle.textContent = "Welcome to Our Restaurant";
-    welcomeText.textContent = "We have the finest rice based dishes on planet earth! lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ";
+    welcomeText.textContent = "We have the finest rice based dishes on planet earth! We've been cooking up our famous rice based dishes since 1973. If this is your first time at Rice Ronin and you don't know what to get, we recommend trying our chicken fried rice.";
 
     selectWelcome.appendChild(welcomeTitle);
     selectWelcome.appendChild(welcomeText);
@@ -58,12 +58,12 @@ function makeHome() {
 
 };
 
-function clearHome() {
+function clearPage() {
     const inner = document.querySelector('.inner');
     inner.textContent = '';
 };
 
 export {
     makeHome,
-    clearHome
+    clearPage
 };

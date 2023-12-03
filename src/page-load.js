@@ -36,6 +36,7 @@ function onPageLoad() {
     
     selectNav.appendChild(navHome);
     navHome.textContent = "Home";
+    navHome.style.color = "var(--red)";
 
     selectNav.appendChild(navMenu);
     navMenu.textContent = "Menu";

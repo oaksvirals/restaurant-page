@@ -1,6 +1,11 @@
 import css from "./style.css";
 import { onPageLoad } from "./page-load";
-import { makeHome, clearHome } from "./home";
+import { makeHome, clearPage } from "./home";
+import { makeContact } from "./contact";
 
 onPageLoad();
-makeHome();
+makeContact();
+
+function tabSwap() {
+    console.log('placeholder')
+};

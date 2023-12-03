@@ -92,7 +92,7 @@ ul button:hover {
     gap: 25px;
 }
 
-.welcome {
+.welcome, .contact {
     border: 5px solid var(--red);
     background-color: var(--white);
     border-radius: 8px;
@@ -100,12 +100,12 @@ ul button:hover {
     padding: 10px;
 }
 
-.welcome h2 {
+h2 {
     text-align: center;
     color: var(--red);
 }
 
-.welcome p {
+p {
     font-size: 20px;
     padding: 10px;
 }
@@ -150,6 +150,41 @@ ul button:hover {
 
 .location p {
     font-size: 20px;
+}
+
+/* Contact */
+
+.adminOne h3,
+.adminTwo h3,
+.adminThree h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+    border-bottom: 2px solid var(--red);
+}
+
+.adminInfo {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.adminOne img,
+.adminTwo img,
+.adminThree img {
+    background-image: url(./images/admin-one.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+}
+.adminTwo img {
+    background-image: url(./images/admin-two.jpg);
+}
+
+.adminThree img {
+    background-image: url(./images/admin-three.jpg);
 }
 
 /* Footer Area */
