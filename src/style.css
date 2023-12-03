@@ -96,7 +96,11 @@ ul button:hover {
     gap: 25px;
 }
 
-.welcome, .contact {
+.welcome,
+.contact,
+.dishes,
+.sides,
+.drinks {
     border: 5px solid var(--red);
     background-color: var(--white);
     border-radius: 8px;
@@ -189,6 +193,38 @@ p {
 
 .adminThree img {
     background-image: url(./images/admin-three.jpg);
+}
+
+/* Menu */
+
+.dishList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dishes h3,
+.sides h3,
+.drinks h3 {
+    margin-top: 20px;
+}
+
+.food-info {
+    border-bottom: 2px solid var(--red);
+}
+
+.dishImg {
+    background-position: center;
+    background-size: cover;
+    width: 225px;
+    height: 225px;
+    border-radius: 8px;
+}
+
+.kimchi-rice {
+    background-image: url(./images/kimchi-rice.jpg);
 }
 
 /* Footer Area */

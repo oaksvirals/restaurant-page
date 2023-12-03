@@ -2,6 +2,7 @@ import css from "./style.css";
 import { onPageLoad } from "./page-load";
 import { makeHome } from "./home";
 import { makeContact } from "./contact";
+import { makeMenu } from "./menu";
 
 onPageLoad();
 
@@ -36,4 +37,5 @@ function clearPage() {
     contact.style.color = '';
 };
 
-makeHome();
+// makeHome();
+makeMenu();
