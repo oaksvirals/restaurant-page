@@ -1,11 +1,39 @@
 import css from "./style.css";
 import { onPageLoad } from "./page-load";
-import { makeHome, clearPage } from "./home";
+import { makeHome } from "./home";
 import { makeContact } from "./contact";
 
 onPageLoad();
-makeContact();
 
-function tabSwap() {
-    console.log('placeholder')
+const home = document.querySelector('.homeButton');
+const menu = document.querySelector('.menuButton');
+const contact = document.querySelector('.contactButton');
+
+home.addEventListener('click', displayHome);
+contact.addEventListener('click', displayContact);
+
+function displayHome() {
+    clearPage();
+    makeHome();
 };
+
+// function displayMenu() {
+//     clearPage();
+//     makeHome();
+// };
+
+function displayContact() {
+    clearPage();
+    makeContact();
+};
+
+function clearPage() {
+    const inner = document.querySelector('.inner');
+    inner.textContent = '';
+
+    home.style.color = '';
+    menu.style.color = '';
+    contact.style.color = '';
+};
+
+makeHome();

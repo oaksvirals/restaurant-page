@@ -56,26 +56,12 @@ function makeHome() {
     selectLocation.appendChild(locationTitle);
     selectLocation.appendChild(locationText);
 
-};
-
-function clearPage() {
-    const inner = document.querySelector('.inner');
-    inner.textContent = '';
-
-    const home = document.querySelector('.homeButton');
-    const menu = document.querySelector('.menuButton');
-    const contact = document.querySelector('.contactButton');
-
-    home.removeAttribute('class', 'activeMenu');
-    menu.removeAttribute('class', 'activeMenu');
-    contact.removeAttribute('class', 'activeMenu');
-
     // set active nav
     const contactNav = document.querySelector('.homeButton');
-    contactNav.setAttribute('class', 'activeMenu');
+    contactNav.style.color = 'var(--red)';
+
 };
 
 export {
-    makeHome,
-    clearPage
+    makeHome
 };

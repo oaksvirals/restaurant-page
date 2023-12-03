@@ -93,7 +93,7 @@ function makeContact() {
 
     // set active nav
     const contactNav = document.querySelector('.contactButton');
-    contactNav.setAttribute('class', 'activeMenu');
+    contactNav.style.color = 'var(--red)';
 
 };
 
